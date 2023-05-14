@@ -1,0 +1,223 @@
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,500&family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+.section{
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    font-family: 'Barlow', sans-serif;
+    overflow: hidden;
+}
+.section__scroll{
+    width: 294px;
+    border-right: 2px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 57px 100px 100px 100px;
+}
+.section__scroll__text{
+    font-weight: 500;
+    font-size: 30px;
+    color: #050215;
+    /* padding-top: 57px;
+    padding-left: 101px;
+    padding-bottom: 360px; */
+}
+.section__scroll__scrollbar_block{
+    /* margin-left: 118px;
+    margin-right: 117px;
+    margin-bottom: 181px; */
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section__scroll__scrollbar_block__count-start{
+    font-weight: 500;
+    font-size: 54px;
+    color:#B4977B;
+    margin-bottom: 15px;
+}
+.section__scroll__scrollbar_block_scroll{
+    width: 4px;
+    height: 200px;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+}
+.section__scroll__scrollbar_block_scroll-thumb{
+    width: 100%;
+    height: calc(100% / 6);
+    background-color: #B4977B;
+    border-radius: 2px;
+}
+.section__scroll__scrollbar_block__count-end{
+    font-weight: 500;
+    font-size: 54px;
+    color:#E4D6C9;
+    margin-top: 15px;
+}
+.section__scroll__image{
+    /* margin-left: 118px;
+    margin-bottom: 100px; */
+    cursor: pointer;
+}
+.section__content{
+    display: flex;
+}
+.section__content__photo{
+
+}
+.section__content__photo_image{
+    margin-left: 164px;
+    margin-bottom: 180px;
+    position: relative;
+}
+.section__content__photo_blur{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('../assets/blur.png');
+    padding: 42px 0px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 28px;
+}
+.section__content__photo_image-img{
+    width: 517px;
+    height: 800px;
+}
+.section__content__photo_contacts{
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 227px;
+    gap: 94px;
+}
+.section__content__photo_contacts-item{
+    font-weight: 500;
+    font-size: 14px;
+    color: #050215;
+}
+.section__content__info{
+    
+}
+.section__content__info__header{
+    display: flex;
+    gap: 108px;
+}
+.section__content__info__header_nav{
+    margin-top: 86px;
+    margin-left: 133px;
+    margin-bottom: 160px;
+}
+.section__content__info__header_nav__list{
+    display: flex;
+    list-style: none;
+    gap: 58px;
+}
+.section__content__info__header_nav__list-item{
+    font-weight: 400;
+    font-size: 18px;
+    color: #050215;
+    white-space: nowrap;
+}
+.section__content__info__header_nav__list-item:hover{
+    color: #b4977b;
+}
+.section__content__info__header_image_bag{
+    margin-left: 108px;
+    margin-top: 86px;
+    position: relative;
+}
+.section__content__info__header_image_bag-count{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #050215;
+    color: #ffffff;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+    font-size: 6px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__content__info__middle{
+    margin-left: 133px;
+    max-width: 650px;
+}
+.section__content__info__middle_title{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.8px;
+    color: #050215;
+}
+.section__content__info__middle_describe{
+    margin-bottom: 40px;
+    max-height: 290px;
+    overflow: auto;
+}
+.describe_item{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32.31px;
+    color: #050215BF;
+}
+.section__content__info__middle_button{
+    width: 178px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #B4977B;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.section__content__info__footer{
+    position: absolute;
+    bottom: 63px;
+    right: 101px;
+}
+.section__content__info__footer_number{
+    font-weight: 600;
+    font-size: 200px;
+    text-shadow:0px 1px 0 rgb(180,151,123),0px -1px 0 rgb(180,151,123),1px 0px 0 rgb(180,151,123),-1px 0px 0 rgb(180,151,123),1px 1px 0 rgb(180,151,123),1px -1px 0 rgb(180,151,123),-1px 1px 0 rgb(180,151,123),-1px -1px 0 rgb(180,151,123),0px 2px 0 rgb(180,151,123),0px -2px 0 rgb(180,151,123),2px 0px 0 rgb(180,151,123),-2px 0px 0 rgb(180,151,123),2px 2px 0 rgb(180,151,123),2px -2px 0 rgb(180,151,123),-2px 2px 0 rgb(180,151,123),-2px -2px 0 rgb(180,151,123);
+    -webkit-text-shadow:0px 1px 0 rgb(180,151,123),0px -1px 0 rgb(180,151,123),1px 0px 0 rgb(180,151,123),-1px 0px 0 rgb(180,151,123),1px 1px 0 rgb(180,151,123),1px -1px 0 rgb(180,151,123),-1px 1px 0 rgb(180,151,123),-1px -1px 0 rgb(180,151,123),0px 2px 0 rgb(180,151,123),0px -2px 0 rgb(180,151,123),2px 0px 0 rgb(180,151,123),-2px 0px 0 rgb(180,151,123),2px 2px 0 rgb(180,151,123),2px -2px 0 rgb(180,151,123),-2px 2px 0 rgb(180,151,123),-2px -2px 0 rgb(180,151,123);
+    -moz-text-shadow:0px 1px 0 rgb(180,151,123),0px -1px 0 rgb(180,151,123),1px 0px 0 rgb(180,151,123),-1px 0px 0 rgb(180,151,123),1px 1px 0 rgb(180,151,123),1px -1px 0 rgb(180,151,123),-1px 1px 0 rgb(180,151,123),-1px -1px 0 rgb(180,151,123),0px 2px 0 rgb(180,151,123),0px -2px 0 rgb(180,151,123),2px 0px 0 rgb(180,151,123),-2px 0px 0 rgb(180,151,123),2px 2px 0 rgb(180,151,123),2px -2px 0 rgb(180,151,123),-2px 2px 0 rgb(180,151,123),-2px -2px 0 rgb(180,151,123);
+    color:rgb(255, 255, 255);
+}
+.section__content__info__image-snow_1{
+    position: absolute;
+    top: 189px;
+    left: 1840px;
+}
+.section__content__info__image-snow_2{
+    position: absolute;
+    top: 599px;
+    left: 1501px;
+}
+.section__content__info__image-snow_3{
+    position: absolute;
+    top: 934px;
+    left: 1110px;
+}
