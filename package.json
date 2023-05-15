@@ -1,12 +1,16 @@
 {
   "name": "webpacktemplate",
   "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/everlast1ng7/HairStyleTemplate.git"
+  },
   "description": "Webpack",
   "private": true,
   "scripts": {
     "dev": "npx cross-env NODE_ENV=development webpack --mode development",
     "build": "npx cross-env NODE_ENV=development webpack --mode production",
-    "start": "npx cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+    "start": "npx cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": ">0.25%, not dead",
   "keywords": [
@@ -24,6 +28,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
     "image-webpack-loader": "^8.1.0",
